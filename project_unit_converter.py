@@ -3,8 +3,8 @@
 #? electrical resistance, electric potencial, electric capacitance, force
 
 #? Version 0.1 alternativa: en esta version se va a intentar a hacer lo mismo que es hacer la interfaz solo que con POO 
-import sys
-DISTANCE = ("mm","cm","dm","m","dam","hm","km")
+
+DISTANCE = ("mm","cm","dm","m","dam","hm","km") 
 TIME = ("s","m","h")
 VOLUME = ("ml","cl","dl","l","dal","hl","kl")
 HEIGHT = ("mg","cg","dg","g","dag","hg","kg","","","t")
@@ -65,20 +65,22 @@ class Convertions:
 
     def interface(self):
         print(TITLE)
-        print("Version: 0.1 beta")
+        print("Version: 0.2")
 
     def data_recolect(self):
-        self.exponent = input(CHOICE_INTERFACE)
+        self.exponent = input(CHOICE_INTERFACE) ### EL sel no e es nesesario al ser una variable local
         if self.exponent == "999":
-            sys.exit()
+            exit() ## Agregar un sistema de control de salida
+
         print(f"\nSeleccionaste {ELECTION[self.exponent]}\n")
+
         self.units = UNITS[self.exponent]
         self.value1 = input("Ingresa el valor 1: ")
         self.unit1 = input(f"""{INTERFACES[self.exponent]}
 ingresa la unidad de tiempo del valor 1: """)
         self.unit2 = input("ingresa la unidad de tiempo del valor que se va a calcular: ")
 
-    def operation(self):
+    def operation(self): # Operacion de que
         
         index1,index2=int(self.units.index(self.unit1)),int(self.units.index(self.unit2))
         if index1 < index2: #ver que unidad es mayor para saber si multiplicar y dividir, luego contar el numero de caracteres desde valor 1 a valor2 y luego
