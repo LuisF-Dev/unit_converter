@@ -1,0 +1,13 @@
+bin/
+lib/
+*.cfg
+
+### Ignorar todos los archivos .cfg
+*.cfg
+
+### Ignora todos los directorios include, bin, lib ###
+bin/
+
+include/
+
+lib/

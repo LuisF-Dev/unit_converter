@@ -1,0 +1,43 @@
+### 17 de abril del 2024 ###
+
+changelogs
+
+****************************************************************
+* Correcciones de bus encontrados en la ejecucion del programa *
+****************************************************************
+
+### Anotaciones rapiadas - acomodar despues ###
+
+Integraciones:
+
+- Limpiar la terminal antes de entrar al programa 
+- Explicar mejor la idea de el programa de conversion de unidades
+- Ingresar el valor numerico con la unidad correspondiente
+- Integrar colorama para mejorar la interfaz
+- Actualizar el codigo para que sea mas legible aplicando poo y solid
+- Agrergar soporte para ingresar texto en el input principal, input de
+opciones. para porder seleccionar las opciones tanto con el numero como con el
+nombre.
+- Sistema de "Did you mean ?" para buscar opciones aproximadas a lo que el
+usuario ingreso.
+- Eliminar el punto decimal en los numeros cuando el decimal es 0
+- Agregando un gitignore
+- Correcion en el uso de las clases
+- Cambiar los comentarios extensos por comentarios multilineas
+- Remplacar funciones de sys.exit() por exit()
+- Eliminar funciones repetidas de exit
+- Poner las interfaces en un txt
+Bugs:
+
+- Control de error en el caso de que el usuario use CTRL+C
+- Control de error a la entrada de datos de un tipo distinto en el input
+principal del programa
+- Detencion del programa al ingresar un tipo de dato distinto al esperado en
+el input.
+- En el input principal, keyError al ingresar un valor inexistente a pesar de
+existir.
+
+Por hacer 
+
+- Optimizar las condicionales de la funcion data recolet en la clase
+convertion
