@@ -1,0 +1,6 @@
+{}→→ UNIDADES SOPORTADAS ←←{}
+{}
+segundos →→→ s 
+minutos  →→→ m
+horas    →→→ h
+{}
